@@ -1,4 +1,14 @@
-import React from 'react';
-import {View , Text} from 'react-native'
+import React, { Component } from 'react';
+import { View, Text } from 'react-native'
 
-cons
+class ClassComponent extends Component {
+    render() {
+        return (
+            <View>
+                <Text>This is the footer , {this.props.name} </Text>
+            </View>
+        )
+    }
+}
+
+export default ClassComponent
